@@ -1,0 +1,5 @@
+<div class="movies-container">
+  <div *ngFor="let popularMovie of popularMovies.results">
+    <app-movie [movie]="popularMovie"></app-movie>
+  </div>
+</div>

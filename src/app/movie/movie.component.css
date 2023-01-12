@@ -1,0 +1,14 @@
+.movie-container {
+  border: 1px lightgray solid;
+  border-radius: 10px;
+  width: 200px;
+  height: 370px;
+}
+
+.movie-container img {
+  border-radius: 10px 10px 0 0;
+}
+
+.movie-container p {
+  padding: 10px;
+}
