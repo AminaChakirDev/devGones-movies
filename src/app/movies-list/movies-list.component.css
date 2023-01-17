@@ -1,7 +1,17 @@
 .movies-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
+  overflow-x: auto;
+  gap: 6px;
   margin: 24px;
+}
+
+.movie-container {
+  width: 200px;
+  height: 370px;
+}
+
+.movie-container p {
+  padding-top: 5px;
+  color: grey;
+  font-size: 12px;
 }

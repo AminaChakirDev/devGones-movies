@@ -1,5 +1,15 @@
 <div class="movies-container">
+  <h2>A l'affiche au cinéma</h2>
   <div *ngFor="let popularMovie of popularMovies.results">
-    <app-movie [movie]="popularMovie"></app-movie>
+    <!-- <app-movie [movie]="popularMovie"></app-movie> -->
+    <div class="movie-container">
+      <div class="img-container">
+        <img
+          [src]="'https://image.tmdb.org/t/p/w200/' + popularMovie.poster_path"
+          alt="affiche du film"
+        />
+      </div>
+      <p>Sorti le {{ popularMovie.release_date | date : "dd/MM/YYYY" }}</p>
+    </div>
   </div>
 </div>
